@@ -7,7 +7,6 @@
     "lib"
   ],
   "scripts": {
-    "prepare": "rimraf lib && webpack --config webpack_config.js"
   },
   "repository": {
     "type": "git",
