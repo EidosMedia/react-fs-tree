@@ -21,11 +21,13 @@ const styles = props => (
     }
     
     .react-em-tree .rfst-icon-folder {
-        width: 18px;
+        width: 14px;
+        height: 14px;
     }
     
     .react-em-tree .rfst-icon-folder-open {
-        width: 18px;
+        width: 14px;
+        height: 14px;
     }
     
     .react-em-tree .rfst-icon-caret-right {
@@ -97,6 +99,10 @@ const styles = props => (
     .react-em-tree .FSNode-wrap.FSNode-deselected {
         color: #777777;
     }
+
+    .react-em-tree .FSNode-wrap.FSNode-deselected .branch-status {
+        color: #505050;
+    }
     
     .react-em-tree .FSNode-node {
         user-select: none;
@@ -115,6 +121,7 @@ const styles = props => (
     .react-em-tree .FSNode-descriptor-container {
         display: flex;
         flex-grow: 1;
+        align-items: center;
     }
     
     .react-em-tree .FSNode-icon {
@@ -125,11 +132,17 @@ const styles = props => (
         height: 100%;
         user-select: none;
         font-weight: bold;
-        transform: translateY(2.5px);
+        display: flex;
+        align-items: center;
+    }
+
+    .react-em-tree .FSNode-icon span {
+        display: flex;
+        align-items: center;
     }
 
     .react-em-tree .branch-status {
-        margin-right: 10px;
+        margin-right: 5px;
         cursor: pointer;
         fill: #505050;
     }
