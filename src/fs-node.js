@@ -136,7 +136,7 @@ class FSNode extends React.Component {
                 <div className="FSNode-icon" onClick={this.props.hasChildNodes ? this.handleToggleOpen : undefined}>
                   {this._getIcon()}
                 </div>
-                <div className="FSNode-text">{this.props.node.name}</div>
+                <div className="FSNode-text" path={this.props.node.path}>{this.props.node.name}</div>
               </div>
               {this.state.selected && <Icons.Check />}
             </div>
